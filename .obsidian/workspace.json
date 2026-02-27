@@ -1,0 +1,299 @@
+{
+  "main": {
+    "id": "2d14508afeba8ca5",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd5d38b91c6351ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2f222ae4ca8cfc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/MicroServices/Communication between Micorservices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Communication between Micorservices"
+            }
+          },
+          {
+            "id": "071b64891d903243",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/MicroServices/Communication between Micorservices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Communication between Micorservices"
+            }
+          },
+          {
+            "id": "349df9feae0de97a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/MicroServices/Communication between Micorservices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Communication between Micorservices"
+            }
+          },
+          {
+            "id": "06d5f42d172ea737",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Function Lists for Data Structures.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Function Lists for Data Structures"
+            }
+          },
+          {
+            "id": "6c5313ff8cf69b9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/Database/N+1 Problem in hibernate and its Solution.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "N+1 Problem in hibernate and its Solution"
+            }
+          },
+          {
+            "id": "f82919adb002acd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Transient, Volatile, and AtomicInteger in Java"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "481fe59a94d773c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc063fe228eb04a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "919133f84fa1fe2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4ec2a8553c8a80d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "74e7eea1b807a891",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "791c2d0d9f130b17",
+    "type": "split",
+    "children": [
+      {
+        "id": "56809120f422293c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc1d457e65d7fa40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Backend Notes/SpringBoot/@RequiredArgsConstructor vs @NoArgsConstructor vs @AllArgsConstructor.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for @RequiredArgsConstructor vs @NoArgsConstructor vs @AllArgsConstructor"
+            }
+          },
+          {
+            "id": "87f1f5735a106610",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "9e8a6d286326bb59",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9cfe7cd196898393",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f7d0e2fec01280e7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Transient, Volatile, and AtomicInteger in Java"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f82919adb002acd7",
+  "lastOpenFiles": [
+    "To do.md",
+    "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
+    "Backend Notes/SpringBoot/TransactionAspectSupport.currentTransactionStatus()    .setRollbackOnly() in SpringBoot.md",
+    "Backend Notes/SpringBoot/Transactions in SpringBoot.md",
+    "Backend Notes/Database/MultiBagFetchException.md",
+    "Backend Notes/Database/Cartesian explosion.md",
+    "Backend Notes/Database/N+1 Problem in hibernate and its Solution.md",
+    "MultipleBagFetchException.md",
+    "Backend Notes/SpringBoot/@Data pitfalls with JPA Entities.md",
+    "Backend Notes/SpringBoot/@RequiredArgsConstructor vs @NoArgsConstructor vs @AllArgsConstructor.md",
+    "Backend Notes/SpringBoot/@Lazy Annotation and Flow when used to resolve circular dependency.md",
+    "Backend Notes/SpringBoot/Circular Dependencies in Spring.md",
+    "Backend Notes/SpringBoot/DI in Spring and SpringBoot and its Types.md",
+    "Backend Notes/SpringBoot/@RestController vs @Controller.md",
+    "Backend Notes/SpringBoot/@RequestBody vs @ModelAttribute vs @RequestPart or @MultipartFile.md",
+    "Backend Notes/SpringBoot/@PathVariable vs @RequestParam.md",
+    "Function Lists for Data Structures.md",
+    "Backend Notes/Java/Comparable vs Comparator.md",
+    "Backend Notes/Java/Thread , Thread lifecycle and Concurrency in Java.md",
+    "Backend Notes/Messaging/Event Driven Architecture.md",
+    "Backend Notes/Messaging/Kafka.md",
+    "Backend Notes/Java/Features Introduced in Java 8.md",
+    "Backend Notes/Java/JDK, JRE, JVM, Just in time compiler and Interpreter..md",
+    "Backend Notes/Design and Architecture/SOLID Principles.md",
+    "Backend Notes/Design and Architecture/Idempotency in SAGA.md",
+    "Backend Notes/Design and Architecture/Saga Design Pattern.md",
+    "Untitled.canvas",
+    "Backend Notes/Build Tools/Untitled.base",
+    "Backend Notes/Deployment",
+    "Backend Notes/Build Tools",
+    "Backend Notes/Topic Index",
+    "Backend Notes/Design and Architecture",
+    "Backend Notes/Cloud",
+    "Backend Notes/Devops",
+    "Backend Notes/Messaging",
+    "Backend Notes/Untitled.canvas",
+    "Backend Notes/Database",
+    "Backend Notes/MicroServices",
+    "Untitled 1.canvas"
+  ]
+}
