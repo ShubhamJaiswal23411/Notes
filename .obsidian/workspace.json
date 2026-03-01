@@ -83,16 +83,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
+                "file": "To do.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transient, Volatile, and AtomicInteger in Java"
+              "title": "To do"
+            }
+          },
+          {
+            "id": "2308e80fc6d6794f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend Notes/Java/Type of locks and locking in Java.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Type of locks and locking in Java"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -227,13 +241,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
+                "file": "Backend Notes/Java/Type of locks and locking in Java.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Transient, Volatile, and AtomicInteger in Java"
+              "title": "Outline of Type of locks and locking in Java"
             }
           }
         ],
@@ -254,9 +268,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "f82919adb002acd7",
+  "active": "2308e80fc6d6794f",
   "lastOpenFiles": [
     "To do.md",
+    "Backend Notes/Java/Type of locks and locking in Java.md",
+    "Prompts.md",
+    "Backend Notes/Java/Thread , Thread lifecycle and Concurrency in Java.md",
     "Backend Notes/SpringBoot/Transient, Volatile, and AtomicInteger in Java.md",
     "Backend Notes/SpringBoot/TransactionAspectSupport.currentTransactionStatus()    .setRollbackOnly() in SpringBoot.md",
     "Backend Notes/SpringBoot/Transactions in SpringBoot.md",
@@ -274,14 +291,11 @@
     "Backend Notes/SpringBoot/@PathVariable vs @RequestParam.md",
     "Function Lists for Data Structures.md",
     "Backend Notes/Java/Comparable vs Comparator.md",
-    "Backend Notes/Java/Thread , Thread lifecycle and Concurrency in Java.md",
     "Backend Notes/Messaging/Event Driven Architecture.md",
     "Backend Notes/Messaging/Kafka.md",
     "Backend Notes/Java/Features Introduced in Java 8.md",
     "Backend Notes/Java/JDK, JRE, JVM, Just in time compiler and Interpreter..md",
     "Backend Notes/Design and Architecture/SOLID Principles.md",
-    "Backend Notes/Design and Architecture/Idempotency in SAGA.md",
-    "Backend Notes/Design and Architecture/Saga Design Pattern.md",
     "Untitled.canvas",
     "Backend Notes/Build Tools/Untitled.base",
     "Backend Notes/Deployment",

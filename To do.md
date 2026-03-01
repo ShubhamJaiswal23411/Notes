@@ -1,0 +1,31 @@
+
+- [ ] create java programs for lambda expressions and method references
+- [ ] same for stream apis 
+- [ ] same for entire java and spring boot concurrency and the notes as well- doing
+- [ ] Idempotency is still not done yet , so have to read and memorize that 
+- [ ] Java memory model how it has changed over the java versions 
+- [ ] Global Exception handling
+- [ ] aop
+- [ ] how would you optimize your database queries 
+- [ ] how would you optimize a given code base
+- [x] @transaction and transactions in spring boot in general 
+- [ ]  if your spring boot application is experiencing performance issues under high load what are the steps you can take to identify the problem
+- [ ] if your application is slower in the production env than the development environment, how would you go about fixing the problems.
+- [ ] 
+- [x] comparator vs comparable
+- [x] @RequestBody vs @ModelAttribute vs @MultipartFile vs @RequestPart
+- [x] @PathVariable vs @RequestParam
+- [x] @RestController vs @Controller
+- [x] @Autowired vs Constructor Injection vs Setter Injection vs any other type
+- [x] how to resolve circular dependencies and which type of injections can resolve circular dependencies 
+- [x] @lazy and how to use it and flow when used to resolve circular dependency
+- [x] @RequiredArgs Constructor vs @NoArgsConstructor vs @AllArgsConstructor
+- [x] Transactions in spring boot , their lifecycle , propagation 
+- [x] N+1 hibernate Problem and why you shouldn't use @data with Entities.
+- [ ] Transient and Voltile and Atomic Integer
+- [ ] Joins with databases 
+- [ ] if your api get timedout when fetching a large dataset what strategy would you use to fix that 
+- [ ] Virtual Threads.
+- [ ] why do we need mannual lock advatages over synchornized keywords , different types of locks they use , reentrant lock , monitor locks, ReentrantReadWriteLocks , short summary of deadlock and what 4 conditions are required to achieve a deadlock
+
+
