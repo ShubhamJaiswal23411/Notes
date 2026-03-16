@@ -127,6 +127,8 @@ Important point : these are the actual state enum values and it doesn't contain 
 - `run()` method completed
 - ***Cannot restart thread***
 
+![[Thread Lifecycle and Transition functions.png]]
+
 ---
 # 5. Important Thread Methods
 
@@ -292,9 +294,18 @@ It ensures visibility, not atomicity.
 
 ---
 ###  6. Can constructor be synchronized?
-
 No — object not fully created yet.
 
+
+---
+###  7. Why are the functions suspend() , stop() and resume() depracated ?
+When `stop()` kills a thread:
+- The thread **stops instantly**
+- Any **locks held by that thread are released**
+- But **shared objects may be left in a partially modified state**
+
+Problem With `suspend()`
+If a thread is suspended **while holding a lock**, that lock **remains locked forever**.
 
 ---
 If you want, I can now create:

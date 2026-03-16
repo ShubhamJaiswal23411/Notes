@@ -1,25 +1,3 @@
-
-Below are **in-depth Obsidian-style notes** (structured, interconnected, interview-focused) on **Java locking mechanisms & deadlocks**.
-
-I’ve reordered the flow for better conceptual understanding:
-
-1. Why Locks Are Needed
-    
-2. Intrinsic Locks (`synchronized` / Monitor Locks)
-    
-3. Explicit Locks (`Lock` API)
-    
-4. ReentrantLock
-    
-5. ReentrantReadWriteLock
-    
-6. Deadlocks
-    
-7. Tricky Interview Questions
-    
-
----
-
 #  Concurrency & Locks in Java
 
 ---
@@ -171,6 +149,7 @@ Useful for producer-consumer problems.
 ### 6️. Better Scalability Under Contention
 
 Under high contention, explicit locks often outperform monitors.
+
 
 ---
 

@@ -4,6 +4,7 @@
 - [ ] same for entire java and spring boot concurrency and the notes as well- doing
 - [ ] Idempotency is still not done yet , so have to read and memorize that 
 - [ ] Java memory model how it has changed over the java versions 
+- [ ] Garbage collection and garbage collector , how many types and how to they work which garbage collection is used in which java version  and details about garbage collection strategy
 - [ ] Global Exception handling
 - [ ] aop
 - [ ] how would you optimize your database queries 
@@ -22,10 +23,12 @@
 - [x] @RequiredArgs Constructor vs @NoArgsConstructor vs @AllArgsConstructor
 - [x] Transactions in spring boot , their lifecycle , propagation 
 - [x] N+1 hibernate Problem and why you shouldn't use @data with Entities.
-- [ ] Transient and Voltile and Atomic Integer
+- [x] Transient and Voltile and Atomic Integer
 - [ ] Joins with databases 
 - [ ] if your api get timedout when fetching a large dataset what strategy would you use to fix that 
 - [ ] Virtual Threads.
-- [ ] why do we need mannual lock advatages over synchornized keywords , different types of locks they use , reentrant lock , monitor locks, ReentrantReadWriteLocks , short summary of deadlock and what 4 conditions are required to achieve a deadlock
+- [x] why do we need mannual lock advatages over synchornized keywords , different types of locks they use , reentrant lock , monitor locks, ReentrantReadWriteLocks , short summary of deadlock and what 4 conditions are required to achieve a deadlock
+- [ ] class loaders 
+- [ ] garbage collec
 
 
