@@ -40,7 +40,6 @@ It:
 3. Releases monitor automatically
 
 ---
-
 ## 1. How It Works Internally
 
 Uses **monitorenter / monitorexit bytecode instructions**.
@@ -150,7 +149,6 @@ Useful for producer-consumer problems.
 
 Under high contention, explicit locks often outperform monitors.
 
-
 ---
 
 ## 2. Trade-off
@@ -165,7 +163,6 @@ finally {
 If forgotten → catastrophic bugs.
 
 ---
-
 # 5️. ReentrantLock
 
 Located in:

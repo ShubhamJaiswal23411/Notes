@@ -145,12 +145,12 @@ No exception was thrown from the outer method so transcation should commit but s
 
 # 🧠 Difference Between Throwing Exception vs setRollbackOnly()
 
-|Throw Exception|setRollbackOnly()|
-|---|---|
-|Immediately exits method|Method continues|
-|Cleaner design|Manual control|
-|Triggers rollback automatically|You decide rollback|
-|Simpler|More complex|
+| Throw Exception                 | setRollbackOnly()   |
+| ------------------------------- | ------------------- |
+| Immediately exits method        | Method continues    |
+| Cleaner design                  | Manual control      |
+| Triggers rollback automatically | You decide rollback |
+| Simpler                         | More complex        |
 
 ---
 

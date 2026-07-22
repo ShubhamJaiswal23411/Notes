@@ -1,4 +1,4 @@
-# 1️. What Is a Transaction?
+ # 1️. What Is a Transaction?
 
 A **transaction** is a logical unit of work that must satisfy **ACID** properties:
 - **A**tomicity → All or nothing

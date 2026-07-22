@@ -45,6 +45,10 @@ public interface Executor {
 ### Key Idea
 You submit a task → executor decides **how and when** to run it.
 
+![[Executor Heirarchy.png]]
+
+
+
 ---
 ## Example
 ```java
@@ -101,6 +105,29 @@ public interface ExecutorService extends Executor
 | Force shutdown      | `shutdownNow()`      |
 | Wait for completion | `awaitTermination()` |
 | Get result          | `Future`             |
+
+## 1. `shutdown()`
+- Initiates **graceful shutdown**
+- Stops accepting new tasks
+- Lets already submitted tasks complete
+- Does NOT block caller
+ Use when you want **orderly completion**
+
+---
+## 2. `shutdownNow()`
+- Initiates **forceful shutdown**
+- Attempts to stop running tasks (via `Thread.interrupt()`), so if a thread is sleeping it wakes up and start executing.
+- Discards waiting tasks (returns them)
+- No guarantee tasks will actually stop
+Use for **emergency termination**
+
+---
+## 3. `awaitTermination(timeout)`
+-  Blocks caller thread until:
+    - All tasks finish OR
+    - Timeout occurs OR
+    - Thread is interrupted
+Typically used **after `shutdown()`**
 
 ---
 ## Example
@@ -239,6 +266,8 @@ ThreadPoolExecutor(
  keepAliveTime,
  TimeUnit,
  BlockingQueue<Runnable>
+ ThreadFactory
+ RejectedExecutionHandler
 )
 ```
 
@@ -251,7 +280,9 @@ ThreadPoolExecutor executor = new ThreadPoolExecutor(
         4,
         60,
         TimeUnit.SECONDS,
-        new LinkedBlockingQueue<>()
+        new LinkedBlockingQueue<>() or new ArrayBlockingQueue<>(),
+        Executors.defaultThreadFactory(),
+        new ThreadPoolExecutor.AbortPolicy()// this is a static class that impelments RejectedExecutionHandler interface
 );
 ```
 
@@ -278,11 +309,12 @@ ExecutorService executor = Executors.newFixedThreadPool(4);
 ```
 ### Characteristics
 
-| Property | Value           |
-| -------- | --------------- |
-| Threads  | Fixed           |
-| Queue    | Unbounded       |
-| Best for | CPU bound tasks |
+| Property  | Value            |
+| --------- | ---------------- |
+| Threads   | Fixed            |
+| Queue     | Unbounded        |
+| Best for  | CPU bound tasks  |
+| when idle | Threads dont die |
 
 ---
 ### Example
@@ -308,11 +340,12 @@ ExecutorService executor = Executors.newCachedThreadPool();
 ```
 ### Characteristics
 
-| Property | Value             |
-| -------- | ----------------- |
-| Threads  | Dynamic           |
-| Queue    | None              |
-| Best for | Short-lived tasks |
+| Property  | Value                |
+| --------- | -------------------- |
+| Threads   | Dynamic              |
+| Queue     | None                 |
+| Best for  | Short-lived tasks    |
+| when idle | die after 60 seconds |
 
 Threads are reused but created as needed.
 
@@ -338,11 +371,14 @@ ExecutorService executor = Executors.newSingleThreadExecutor();
 ```
 ### Characteristics
 
-| Property | Value                |
-| -------- | -------------------- |
-| Threads  | 1                    |
-| Ordering | Guaranteed           |
-| Use case | sequential execution |
+| Property  | Value                                                       |
+| --------- | ----------------------------------------------------------- |
+| Threads   | 1                                                           |
+| Ordering  | Guaranteed                                                  |
+| Use case  | sequential execution                                        |
+| Queue     | Unbounded queue                                             |
+| Use case  | Need to process tasks sequentially but still asynchronously |
+| When idle | Thead doesn't die                                           |
 
 ---
 ### Example
@@ -634,7 +670,7 @@ If you'd like, I can also create **another Obsidian note covering the INTERNALS 
     
 - rejection policies
      
-- lifecycle states
+- lifecycle states 
     
 - how execute() works internally
     

@@ -29,15 +29,10 @@
 ## 3. **DispatcherServlet**
 
 - Central **front controller** in Spring MVC.
-    
 - Responsibilities:
-    
     1. Determine which **controller** should handle the request (via HandlerMapping).
-        
     2. Prepare **handler execution chain** (controller + interceptors).
-        
     3. Manage request **lifecycle** (pre-processing, post-processing).
-        
 
 ```text
 DispatcherServlet
@@ -51,9 +46,7 @@ DispatcherServlet
 ## 4. **HandlerMapping & Controller Selection**
 
 - Spring looks at **`@RequestMapping` / `@GetMapping` / `@PostMapping` annotations**.
-    
 - Matches URL, HTTP method, headers, etc., to the correct controller method.
-    
 
 ```java
 @RestController
@@ -74,13 +67,9 @@ public class UserController {
 ## 5. **Controller Method Execution**
 
 - DispatcherServlet **injects dependencies** (like `UserService`) via **ApplicationContext**.
-    
 - Controller method executes **business logic**:
-    
     1. Calls service layer → interacts with database via repository.
-        
     2. Can perform validation, caching, transactions, etc.
-        
 
 ```text
 UserController.getUser()
@@ -93,11 +82,8 @@ UserController.getUser()
 ## 6. **Return Value / Response Handling**
 
 - Controller returns a value (POJO, List, Map, etc.)
-    
 - Spring uses **HttpMessageConverters** to serialize the object (usually JSON or XML).
-    
 - Response body is written to **HttpServletResponse**.
-    
 
 ```text
 Controller returns User object
@@ -109,14 +95,10 @@ Controller returns User object
 
 ## 7. **Interceptors / Filters / Exception Handling**
 
-- Before sending response:
-    
+- Before sending response:    
     - **Filters**: pre/post-processing (security, logging, CORS)
-        
     - **Interceptors**: preHandle / postHandle / afterCompletion
-        
     - **Exception handlers**: `@ControllerAdvice` for global exception handling
-        
 
 ```text
 [DispatcherServlet]
@@ -128,8 +110,7 @@ Controller returns User object
 
 ## 8. **Client Receives Response**
 
-- HTTP status code + headers + serialized body returned to client:
-    
+- HTTP status code + headers + serialized body returned to client:    
 
 ```json
 {
@@ -139,8 +120,7 @@ Controller returns User object
 }
 ```
 
-- Browser / Postman renders or processes the response.
-    
+- Browser / Postman renders or processes the response.    
 
 ---
 

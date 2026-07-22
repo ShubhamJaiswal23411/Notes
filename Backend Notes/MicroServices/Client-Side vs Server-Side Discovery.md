@@ -4,15 +4,10 @@
 ### Definition
 
 In **Client-Side Discovery**, the **client itself**:
-
 1. Queries the service registry
-    
 2. Gets the list of available instances
-    
 3. Chooses one instance (load balancing logic)
-    
 4. Sends the request directly
-    
 
 ### Flow
 
@@ -187,15 +182,10 @@ Kubernetes includes built-in service discovery via:
 ## ✅ When to Use Eureka
 
 - Spring Boot microservices
-    
 - VM-based deployment
-    
 - Small-to-medium distributed systems
-    
 - When not using containers
-    
 - Legacy cloud environments
-    
 
 Example:
 
@@ -210,15 +200,10 @@ Use Eureka for service registry
 ## ✅ When to Use Kubernetes
 
 - Containerized applications (Docker)
-    
 - Cloud-native systems
-    
 - Auto-scaling required
-    
 - High availability required
-    
 - CI/CD pipelines
-    
 
 Example:
 
@@ -228,8 +213,6 @@ Running in AWS/GCP
 Auto-scales during traffic spike
 Uses Kubernetes Service for discovery
 ```
-
----
 
 ---
 

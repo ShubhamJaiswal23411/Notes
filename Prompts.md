@@ -13,6 +13,6 @@ here is what i want you to do with it :
 
 # Create the obsidian note
 
-okay i want you to give me in depth obsidian notes on the requested topic with tricky interview questions as well
+okay i want you to give me in depth obsidian notes on the requested topic with tricky interview questions and their answers as well
 
 but you dont necessarily have to follow the order in which the things are asked you can change the topic sequence if ordering makes more sense from a learning perspective

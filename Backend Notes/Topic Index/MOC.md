@@ -22,7 +22,7 @@ This vault contains structured knowledge for Java backend development.
 - [[Service Discovery]]
 - [[API Gateway]]
 - [[Circuit Breaker]]
-- [[Distributed Tracing]]
+- [[Distributed Tracing in Microservices]]
 
 ## Data Layer
 - [[SQL]]

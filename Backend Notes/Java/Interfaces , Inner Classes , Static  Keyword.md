@@ -76,13 +76,39 @@ Yes.
 Yes, across all instances.
 
 ---
-### 17. Is static variable thread-safe?
+### *17. Is static variable thread-safe?*
 No, unless synchronized.
 
 ---
 ### *18. Can static methods be final?*
 Yes.
+Because:
+###  `static` does NOT prevent redefinition (hiding)
+Without `final`, a subclass can still do this:
+```java
+class A {  
+    static void foo() {  
+        System.out.println("A");  
+    }  
+}  
+  
+class B extends A {  
+    static void foo() {  
+        System.out.println("B");  
+    }  
+}
+```
 
+This compiles fine. But:
+
+```java
+A obj = new B();  
+obj.foo(); // prints "A" so call is resovled based on reference variable no polymorphism here.
+```
+This creates **confusion**:
+
+- Looks like overriding
+- Behaves differently (no runtime polymorphism)
 ---
 ### 19. What happens if we put `this` inside static method?
 Compile-time error.
@@ -197,6 +223,83 @@ Class must be abstract.
 2. Static nested class
 3. Local inner class
 4. Anonymous inner class
+## 1️. Member Inner Class (non-static)
+
+Defined at class level, tied to an instance.
+```java
+class Outer {
+    int x = 10;
+
+    class Inner {
+        void show() {
+            System.out.println(x); // can access instance members
+        }
+    }
+}
+
+// Usage
+Outer o = new Outer();
+Outer.Inner i = o.new Inner();
+i.show();
+```
+## 2️. Static Nested Class
+
+Belongs to class, no access to instance members directly.
+```java
+class Outer {
+    static int x = 20;
+
+    static class Inner {
+        void show() {
+            System.out.println(x); // can access only static members
+        }
+    }
+}
+
+// Usage
+Outer.Inner i = new Outer.Inner();
+i.show();
+```
+
+## 3️. Local Inner Class
+
+Defined inside a method.
+```java
+class Outer {
+    void display() {
+        int y = 30; // must be effectively final
+
+        class Inner {
+            void show() {
+                System.out.println(y);
+            }
+        }
+
+        new Inner().show();
+    }
+}
+```
+
+## 4️. Anonymous Inner Class
+
+No class name, used for one-time implementation.
+```java
+abstract class Animal {
+    abstract void sound();
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Animal() {
+            void sound() {
+                System.out.println("Bark");
+            }
+        };
+
+        a.sound();
+    }
+}
+```
 
 ---
 ### 42. Can inner class be private?
@@ -257,7 +360,7 @@ No (it has no name).
 
 ---
 ### ***55. Can local inner class have access modifiers?***
-No (cannot be public/private/protected).
+No (cannot be public/private/protected). Inner local classes are classes defined inside of a method and inside of a method access modifiers dont make sense.
 
 ---
 ### 56. Can static nested class access outer static members?
@@ -272,7 +375,7 @@ Non-static holds reference to outer instance → more memory.
 Yes (implicitly static).
 
 ---
-### 59. Can we declare class inside interface?
+### *59. Can we declare class inside interface?*
 Yes (implicitly public static).
 
 ---

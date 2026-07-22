@@ -163,9 +163,3 @@ class A {
 - **Prototype beans** → circular dependencies **cannot be resolved** by Spring.
 - `@Lazy` + constructor injection → allows circular dependency resolution for **singletons**.
 
----
-
-✅ **TL;DR:**
-- **Field or setter injection** can handle circular dependencies in singletons.
-- **Constructor injection alone cannot** unless combined with `@Lazy`.
-- **Best approach** is redesign to avoid circular references.

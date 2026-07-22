@@ -153,19 +153,12 @@ Only `@RequestParam` supports:
 ---
 
 ###  1.  What happens if path variable missing?
-
-→ 404 error (URL doesn’t match mapping)
-
----
+    404 error (URL doesn’t match mapping)
 
 ###  2. What happens if required request param missing?
-
-→ 400 Bad Request (unless required = false)
-
----
+	400 Bad Request (unless required = false)
 
 ### 3. Which is more RESTful?
-
 `@PathVariable` because it is asking for resource which is one the principles of rest architecture it is based on resources.
 
 ---

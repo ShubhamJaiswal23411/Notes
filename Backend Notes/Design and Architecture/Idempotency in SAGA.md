@@ -7,7 +7,7 @@ So each step must be **idempotent**.
 
 ---
 
-## 🔹 What is Idempotency?
+##  1. What is Idempotency?
 
 An operation is idempotent if:
 > Running it multiple times produces the same result as running it once.
@@ -20,7 +20,7 @@ Good:
 
 ---
 
-## 🔹 How to Achieve Idempotency
+##  2. How to Achieve Idempotency
 
 ### 1️. Use Unique Transaction IDs
 
@@ -73,7 +73,7 @@ if paymentStatus != SUCCESS → process
 
 ---
 
-#  Retry Strategies in Saga
+#  2. Retry Strategies in Saga
 
 Failures are common in distributed systems.
 Retry strategies help recover from temporary issues.
